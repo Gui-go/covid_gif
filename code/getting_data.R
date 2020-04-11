@@ -16,7 +16,7 @@ for (i in 1:100) {
   covid19data <- rbind(covid19data, newpage)
   print(paste0("Downloading page ", i))
   if(!url.exists(paste0("https://brasil.io/api/dataset/covid19/caso/data?page=", as.character(i+1)))){
-    print("Esgataram-se os dados. Por hoje é só..")
+    print("Esgotaram-se os dados. Por hoje é só..")
     break
   }
 }
